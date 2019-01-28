@@ -3,6 +3,8 @@ const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
+// random comment testing branch
+
 // importing GraphQL schema from schema/schema.js
 const schema = require('./schema/schema');
 
@@ -18,7 +20,7 @@ app.use(cors());
 
 // User: chase
 // PW: test123
-mongoose.connect('mongodb://<user>:<password>123@ds119273.mlab.com:19273/gql-sandbox', { useNewUrlParser: true });
+mongoose.connect('mongodb://chase:test123@ds119273.mlab.com:19273/gql-sandbox', { useNewUrlParser: true });
 
 
 mongoose.connection.once('open', () => {
